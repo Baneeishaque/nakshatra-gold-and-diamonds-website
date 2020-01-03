@@ -1,0 +1,1453 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 14, ../sass/_about.scss */
+.aboutContent .aboutNakshatra {
+  padding: 40px 0px;
+}
+/* line 18, ../sass/_about.scss */
+.aboutContent .arrival-hd {
+  text-align: left;
+  padding-left: 60px;
+  margin-top: 0;
+}
+/* line 24, ../sass/_about.scss */
+.aboutContent h3 {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  color: #1b164d;
+  font-size: 18px;
+  margin-top: 50px;
+}
+/* line 34, ../sass/_about.scss */
+.aboutContent p {
+  color: #444444;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  line-height: 28px;
+  margin-top: 20px;
+  text-align: justify;
+}
+/* line 47, ../sass/_about.scss */
+.aboutContent .patterBlock {
+  background: url(../images/patter1.png) repeat;
+  padding: 70px 0px;
+}
+/* line 52, ../sass/_about.scss */
+.aboutContent .thumbSection {
+  padding: 0px;
+}
+/* line 56, ../sass/_about.scss */
+.aboutContent .thumbSection .thumbs {
+  background: #fff;
+  text-align: center;
+}
+/* line 61, ../sass/_about.scss */
+.aboutContent .thumbSection .thumbs .imageHolder {
+  position: relative;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+/* line 67, ../sass/_about.scss */
+.aboutContent .thumbSection .thumbs .imageHolder:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: url(../images/zoomIcon.png) no-repeat center center rgba(255, 255, 255, 0.2);
+  background-size: 15%;
+  opacity: 0;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 80, ../sass/_about.scss */
+.aboutContent .thumbSection .thumbs .imageHolder:hover:before {
+  opacity: 1;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 88, ../sass/_about.scss */
+.aboutContent .thumbSection h3 {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #daaf61;
+  font-size: 15px;
+}
+/* line 98, ../sass/_about.scss */
+.aboutContent .thumbSection .thumbText {
+  padding: 35px 30px;
+}
+/* line 102, ../sass/_about.scss */
+.aboutContent .thumbSection .thumbText p {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 114, ../sass/_about.scss */
+  .aboutNakshatra .col-lg-4 {
+    text-align: center;
+  }
+
+  /* line 118, ../sass/_about.scss */
+  .aboutContent .arrival-hd {
+    text-align: center;
+    padding: 0px;
+  }
+
+  /* line 123, ../sass/_about.scss */
+  .aboutContent h3 {
+    text-align: center;
+  }
+
+  /* line 127, ../sass/_about.scss */
+  .aboutContent p {
+    text-align: justify;
+  }
+}
+/* line 11, ../sass/_contact.scss */
+.contactContent {
+  background: url(../images/patter1.png) repeat;
+  padding: 30px 0px 0px 0px;
+}
+/* line 17, ../sass/_contact.scss */
+.contactContent .arrival-hd {
+  text-align: center;
+  margin: 10px auto;
+}
+/* line 22, ../sass/_contact.scss */
+.contactContent h2 {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  color: #1b164d;
+  font-size: 18px;
+  margin-top: 50px;
+}
+/* line 32, ../sass/_contact.scss */
+.contactContent p {
+  color: #444444;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  line-height: 28px;
+  margin-top: 20px;
+}
+/* line 43, ../sass/_contact.scss */
+.contactContent .addressBlock {
+  background: url(../images/addressMarker.png) no-repeat left top;
+  padding-left: 30px;
+  background-size: 3%;
+  margin-top: 30px;
+}
+/* line 51, ../sass/_contact.scss */
+.contactContent .formHolder {
+  font-family: "Raleway", sans-serif;
+  color: #444444;
+  padding-top: 50px;
+}
+/* line 57, ../sass/_contact.scss */
+.contactContent .formHolder label {
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+/* line 62, ../sass/_contact.scss */
+.contactContent .formHolder .form-group {
+  margin-bottom: 20px;
+}
+/* line 66, ../sass/_contact.scss */
+.contactContent .formHolder .formfields {
+  width: 100%;
+  height: 35px;
+  border: solid 1px #e6e6e6;
+  padding-left: 20px;
+}
+/* line 73, ../sass/_contact.scss */
+.contactContent .formHolder .formfields:focus {
+  outline: 0px;
+}
+/* line 78, ../sass/_contact.scss */
+.contactContent .formHolder .formfieldsBig {
+  width: 100%;
+  height: 100px;
+  border: solid 1px #e6e6e6;
+  resize: none;
+  padding: 20px;
+}
+/* line 86, ../sass/_contact.scss */
+.contactContent .formHolder .formfieldsBig:focus {
+  outline: 0px;
+}
+/* line 91, ../sass/_contact.scss */
+.contactContent .formHolder .formBtn {
+  background: #ebc376;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* line 103, ../sass/_contact.scss */
+.mapSection {
+  padding: 40px 0px 0px 0px;
+}
+
+/* line 14, ../sass/_jwellery.scss */
+.jwelleryContent .jwelleryBanner {
+  margin: 40px 0px;
+  position: relative;
+}
+/* line 19, ../sass/_jwellery.scss */
+.jwelleryContent .jwelleryBanner a {
+  position: absolute;
+  right: 35%;
+  top: 67%;
+  background: #101e1f;
+  text-decoration: none;
+  color: white;
+  padding: 15px 40px 15px 20px;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+/* line 36, ../sass/_jwellery.scss */
+.jwelleryContent .arrival-hd {
+  text-align: center;
+  margin: 0;
+}
+/* line 41, ../sass/_jwellery.scss */
+.jwelleryContent h3 {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  color: #1b164d;
+  font-size: 18px;
+  margin-top: 50px;
+}
+/* line 51, ../sass/_jwellery.scss */
+.jwelleryContent p {
+  color: #444444;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  line-height: 23px;
+  margin-top: 20px;
+}
+
+/* line 66, ../sass/_jwellery.scss */
+#portfolio {
+  margin: 1rem 0;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 1rem;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  -webkit-column-width: 33.33333333333333%;
+  -moz-column-width: 33.33333333333333%;
+  column-width: 33.33333333333333%;
+  width: 85%;
+  position: relative;
+  margin: 0 auto;
+}
+/* line 81, ../sass/_jwellery.scss */
+#portfolio .tile {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  position: relative;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+/* line 90, ../sass/_jwellery.scss */
+#portfolio .tile .moreDetails {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(226, 177, 111, 0.8);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+/* line 103, ../sass/_jwellery.scss */
+#portfolio .tile .moreDetails h3 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  line-height: 23px;
+  color: white;
+}
+/* line 113, ../sass/_jwellery.scss */
+#portfolio .tile .moreDetails a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  border: solid 1px white;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 20px;
+}
+/* line 129, ../sass/_jwellery.scss */
+#portfolio .tile .tableDiv {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+/* line 135, ../sass/_jwellery.scss */
+#portfolio .tile .tableDiv .textHolder {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+}
+/* line 146, ../sass/_jwellery.scss */
+#portfolio .tile:hover .moreDetails {
+  height: 100%;
+}
+/* line 153, ../sass/_jwellery.scss */
+#portfolio .scale-anm {
+  transform: scale(1);
+}
+/* line 157, ../sass/_jwellery.scss */
+#portfolio .tile img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 166, ../sass/_jwellery.scss */
+.filterBtns {
+  text-align: center;
+  margin: 50px 0px 30px 0px;
+}
+/* line 171, ../sass/_jwellery.scss */
+.filterBtns .fbtn {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: normal;
+  padding: 15px 20px;
+  margin: 0px 10px;
+  border: 1px solid #adadad;
+  color: #444444;
+  text-transform: uppercase;
+}
+/* line 185, ../sass/_jwellery.scss */
+.filterBtns .fbtn:hover {
+  text-decoration: none;
+  color: #e2b16f;
+}
+/* line 190, ../sass/_jwellery.scss */
+.filterBtns .fbtn:focus {
+  outline: none;
+}
+/* line 194, ../sass/_jwellery.scss */
+.filterBtns .fbtn.active {
+  background: #e2b16f;
+  color: #fff;
+  border: 1px solid #e2b16f;
+}
+/* line 200, ../sass/_jwellery.scss */
+.filterBtns .hvr-underline-from-center {
+  background: #fff;
+}
+/* line 204, ../sass/_jwellery.scss */
+.filterBtns .hvr-underline-from-center:before {
+  background: #e2b16f;
+}
+
+/* line 212, ../sass/_jwellery.scss */
+.mobilefilter {
+  display: none;
+}
+/* line 216, ../sass/_jwellery.scss */
+.mobilefilter select {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  width: 100%;
+  padding: 5px 0px;
+}
+/* line 224, ../sass/_jwellery.scss */
+.mobilefilter select:focus {
+  outline: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+  /* line 235, ../sass/_jwellery.scss */
+  .filterBtns .fbtn {
+    font-size: 13px;
+    margin: 0px 5px;
+  }
+
+  /* line 240, ../sass/_jwellery.scss */
+  .jwelleryContent .jwelleryBanner a {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    top: auto;
+  }
+}
+@media only screen and (max-width: 991px) {
+  /* line 250, ../sass/_jwellery.scss */
+  .filterBtns .fbtn {
+    padding: 10px 15px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  /* line 258, ../sass/_jwellery.scss */
+  .filterBtns .fbtn {
+    padding: 10px;
+    font-size: 12px;
+    margin: 0px 2px;
+  }
+
+  /* line 264, ../sass/_jwellery.scss */
+  .jwelleryContent .jwelleryBanner a {
+    padding: 15px 30px 15px 15px;
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 547px) {
+  /* line 272, ../sass/_jwellery.scss */
+  .filterBtns {
+    display: none;
+  }
+
+  /* line 276, ../sass/_jwellery.scss */
+  .mobilefilter {
+    display: block;
+  }
+
+  /* line 280, ../sass/_jwellery.scss */
+  .jwelleryContent .jwelleryBanner {
+    text-align: center;
+  }
+
+  /* line 284, ../sass/_jwellery.scss */
+  .jwelleryContent .jwelleryBanner a {
+    position: static;
+    right: auto;
+    bottom: auto;
+    top: auto;
+    display: inline-block;
+    margin: 10px 0px;
+  }
+}
+/* line 11, ../sass/_productcontent.scss */
+.productContent {
+  padding: 40px 0px 30px 0;
+  /* Image expands to width of surround */
+  /* CSS for slider - will expand to width of surround */
+}
+/* line 15, ../sass/_productcontent.scss */
+.productContent img {
+  max-width: inherit !important;
+}
+/* line 20, ../sass/_productcontent.scss */
+.productContent .arrival-hd {
+  text-align: left;
+  padding-left: 60px;
+}
+/* line 25, ../sass/_productcontent.scss */
+.productContent h3 {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  color: #1b164d;
+  font-size: 22px;
+}
+/* line 34, ../sass/_productcontent.scss */
+.productContent h4 {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  color: #b1b1b1;
+  font-size: 15px;
+  background: url(../images/goldMark.png) no-repeat;
+  background-size: 10%;
+  padding: 15px 75px;
+  margin: 20px 0px;
+}
+/* line 47, ../sass/_productcontent.scss */
+.productContent p {
+  color: #444444;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  line-height: 23px;
+  margin-top: 20px;
+}
+/* line 59, ../sass/_productcontent.scss */
+.productContent .patterBlock {
+  background: url(../images/patter1.png) repeat;
+  padding: 70px 0px;
+}
+/* line 65, ../sass/_productcontent.scss */
+.productContent #surround {
+  min-width: 256px;
+  max-width: 480px;
+  border: solid 1px #eaeaea;
+}
+/* line 73, ../sass/_productcontent.scss */
+.productContent img.cloudzoom {
+  width: 100%;
+}
+/* line 79, ../sass/_productcontent.scss */
+.productContent #slider1 {
+  width: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 119px;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  position: relative;
+}
+
+/* line 11, ../sass/_categories.scss */
+.categoriesSection {
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 40px 0 0 0;
+  background: #fff;
+}
+/* line 19, ../sass/_categories.scss */
+.categoriesSection .accordianList {
+  width: 100%;
+  height: auto;
+  float: left;
+  display: block;
+}
+/* line 27, ../sass/_categories.scss */
+.categoriesSection .accordianList .togglebox {
+  width: 100%;
+  margin: 0 auto;
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+  transform: translateZ(0);
+}
+/* line 37, ../sass/_categories.scss */
+.categoriesSection .accordianList input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+/* line 42, ../sass/_categories.scss */
+.categoriesSection .accordianList label {
+  position: relative;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  color: #444;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+}
+/* line 56, ../sass/_categories.scss */
+.categoriesSection .accordianList label:hover {
+  color: #000;
+  font-weight: 600;
+}
+/* line 63, ../sass/_categories.scss */
+.categoriesSection .accordianList label[for*='1'] {
+  border: 1;
+}
+/* line 69, ../sass/_categories.scss */
+.categoriesSection .accordianList label:after {
+  content: '\f067';
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-family: fontawesome;
+  transform: rotate(90deg);
+  transition: .3s transform;
+  font-size: 12px;
+}
+/* line 80, ../sass/_categories.scss */
+.categoriesSection .accordianList section {
+  height: 0;
+  transition: .3s all;
+  overflow: hidden;
+}
+/* line 86, ../sass/_categories.scss */
+.categoriesSection .accordianList #toggle1:checked ~ label[for*='1']:after,
+.categoriesSection .accordianList #toggle2:checked ~ label[for*='2']:after,
+.categoriesSection .accordianList #toggle3:checked ~ label[for*='3']:after,
+.categoriesSection .accordianList #toggle4:checked ~ label[for*='4']:after,
+.categoriesSection .accordianList #toggle5:checked ~ label[for*='5']:after {
+  transform: rotate(0deg);
+  content: '\f068';
+}
+/* line 95, ../sass/_categories.scss */
+.categoriesSection .accordianList #toggle1:checked ~ #content1,
+.categoriesSection .accordianList #toggle2:checked ~ #content2,
+.categoriesSection .accordianList #toggle3:checked ~ #content3,
+.categoriesSection .accordianList #toggle4:checked ~ #content4,
+.categoriesSection .accordianList #toggle5:checked ~ #content5 {
+  height: auto;
+}
+/* line 107, ../sass/_categories.scss */
+.categoriesSection .panel-body {
+  padding: 0;
+}
+/* line 111, ../sass/_categories.scss */
+.categoriesSection .panel-body .table {
+  margin-bottom: 0px;
+}
+/* line 119, ../sass/_categories.scss */
+.categoriesSection .asideHd {
+  color: #1b164d;
+  background: #daaf61;
+  padding: 15px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  display: block;
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+/* line 135, ../sass/_categories.scss */
+.categoriesSection .panel-heading {
+  padding: 15px;
+}
+/* line 140, ../sass/_categories.scss */
+.categoriesSection .panel-group {
+  margin-bottom: 20px;
+  width: 100%;
+  float: left;
+  display: block;
+}
+/* line 146, ../sass/_categories.scss */
+.categoriesSection .panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 1px solid rgba(196, 196, 196, 0.6) !important;
+}
+/* line 155, ../sass/_categories.scss */
+.categoriesSection .panel-group .panel .panel-title {
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 159, ../sass/_categories.scss */
+.categoriesSection .panel-group .panel .panel-title a {
+  width: 100%;
+  display: block;
+  color: #444;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+/* line 169, ../sass/_categories.scss */
+.categoriesSection .panel-group .panel .panel-title a:after {
+  content: "\f067";
+  font-family: 'FontAwesome';
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  float: right;
+  font-size: 12px;
+}
+/* line 182, ../sass/_categories.scss */
+.categoriesSection .panel-group .panel + .panel {
+  margin-top: 0;
+}
+/* line 188, ../sass/_categories.scss */
+.categoriesSection .panel-group .panel.expand {
+  margin-bottom: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 1px solid rgba(196, 196, 196, 0.6) !important;
+}
+/* line 197, ../sass/_categories.scss */
+.categoriesSection .panel-group .panel.expand .panel-title {
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 201, ../sass/_categories.scss */
+.categoriesSection .panel-group .panel.expand .panel-title a {
+  width: 100%;
+  display: block;
+  color: #444;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+/* line 211, ../sass/_categories.scss */
+.categoriesSection .panel-group .panel.expand .panel-title a:after {
+  content: "\f068";
+  font-family: 'FontAwesome';
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  float: right;
+  font-size: 12px;
+}
+/* line 224, ../sass/_categories.scss */
+.categoriesSection .panel-group .panel.expand + .panel.expand {
+  margin-top: 0;
+}
+/* line 232, ../sass/_categories.scss */
+.categoriesSection ul.categoriesList {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 0;
+  padding: 0 0 0 30px;
+  list-style: none;
+  background: #f9f9f9;
+}
+/* line 242, ../sass/_categories.scss */
+.categoriesSection ul.categoriesList li {
+  width: 100%;
+  display: block;
+  color: #444;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  padding: 15px 15px 15px 0;
+  border-bottom: 1px solid rgba(196, 196, 196, 0.6) !important;
+  background: #f9f9f9;
+}
+/* line 255, ../sass/_categories.scss */
+.categoriesSection ul.categoriesList li a {
+  color: #444;
+  text-decoration: none;
+}
+/* line 261, ../sass/_categories.scss */
+.categoriesSection ul.categoriesList li:last-child {
+  border-bottom: none !important;
+}
+/* line 284, ../sass/_categories.scss */
+.categoriesSection ul.categoriesList.acc1 li:hover a, .categoriesSection ul.categoriesList.acc2 li:hover a, .categoriesSection ul.categoriesList.acc3 li:hover a, .categoriesSection ul.categoriesList.acc4 li:hover a, .categoriesSection ul.categoriesList.acc5 li:hover a {
+  color: #000;
+}
+/* line 295, ../sass/_categories.scss */
+.categoriesSection ul.categoriesList.acc1 li.active a, .categoriesSection ul.categoriesList.acc2 li.active a, .categoriesSection ul.categoriesList.acc3 li.active a, .categoriesSection ul.categoriesList.acc4 li.active a, .categoriesSection ul.categoriesList.acc5 li.active a {
+  font-weight: 600;
+}
+/* line 305, ../sass/_categories.scss */
+.categoriesSection .resultArea {
+  width: 95%;
+  height: auto;
+  float: right;
+}
+/* line 314, ../sass/_categories.scss */
+.categoriesSection .banner-row {
+  width: 100%;
+  height: auto;
+  float: left;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+/* line 323, ../sass/_categories.scss */
+.categoriesSection .banner-aside {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 20px 0;
+}
+/* line 331, ../sass/_categories.scss */
+.categoriesSection .well {
+  min-height: 20px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  float: left;
+  box-shadow: none;
+}
+/* line 345, ../sass/_categories.scss */
+.categoriesSection .TabResult {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+/* line 351, ../sass/_categories.scss */
+.categoriesSection .TabResult .RowCell {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+/* line 359, ../sass/_categories.scss */
+.categoriesSection .catagoriesbox {
+  width: 100%;
+  height: auto;
+  float: left;
+  border: 1px solid #ddd;
+  margin: 15px 0;
+  position: relative;
+}
+/* line 368, ../sass/_categories.scss */
+.categoriesSection .catagoriesbox figure {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+/* line 376, ../sass/_categories.scss */
+.categoriesSection .catagoriesbox figcaption {
+  width: 100%;
+  height: auto;
+  float: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  padding: 15px;
+  line-height: 30px;
+  display: none;
+}
+/* line 387, ../sass/_categories.scss */
+.categoriesSection .catagoriesbox figcaption p {
+  width: 70%;
+  height: auto;
+  float: left;
+  display: inline-block;
+}
+/* line 395, ../sass/_categories.scss */
+.categoriesSection .catagoriesbox figcaption span {
+  width: 25%;
+  height: auto;
+  float: right;
+  display: inline-block;
+  background: url(../images/rupees.png) left center no-repeat;
+  background-size: 12px;
+  padding-left: 20px;
+}
+/* line 408, ../sass/_categories.scss */
+.categoriesSection .catagoriesbox .catagoriesOverlay {
+  background: rgba(218, 175, 97, 0.9);
+  text-align: center;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 424, ../sass/_categories.scss */
+.categoriesSection .catagoriesbox .catagoriesOverlay h3 {
+  text-align: center;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+/* line 442, ../sass/_categories.scss */
+.categoriesSection .catagoriesbox .catagoriesOverlay p {
+  text-align: center;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  -moz-transition: all 0.9s ease-in-out;
+  -o-transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 0;
+}
+/* line 464, ../sass/_categories.scss */
+.categoriesSection .catagoriesbox:hover .catagoriesOverlay {
+  opacity: 1;
+  cursor: pointer;
+  height: 100%;
+}
+/* line 470, ../sass/_categories.scss */
+.categoriesSection .catagoriesbox:hover .catagoriesOverlay h3 {
+  opacity: 1;
+  height: 60%;
+}
+/* line 477, ../sass/_categories.scss */
+.categoriesSection .catagoriesbox:hover .catagoriesOverlay p {
+  opacity: 1;
+  height: 50%;
+}
+/* line 488, ../sass/_categories.scss */
+.categoriesSection ul.paginationlist {
+  width: auto;
+  float: right;
+  display: block;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+/* line 498, ../sass/_categories.scss */
+.categoriesSection ul.paginationlist li {
+  padding: 10px 15px;
+  border: 1px solid #ebebeb !important;
+  line-height: 90%;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: inline-block;
+  float: left;
+  background: #f5f5f5;
+  line-height: 20px;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+/* line 513, ../sass/_categories.scss */
+.categoriesSection ul.paginationlist li a {
+  color: #444;
+  text-decoration: none;
+  font-size: 14px;
+}
+/* line 520, ../sass/_categories.scss */
+.categoriesSection ul.paginationlist li .fa {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+}
+/* line 528, ../sass/_categories.scss */
+.categoriesSection ul.paginationlist li:last-child {
+  background: #444;
+  border: 1px solid #333 !important;
+  padding: 9px 15px;
+}
+/* line 534, ../sass/_categories.scss */
+.categoriesSection ul.paginationlist li:last-child:hover {
+  border: 1px solid #d7ac42 !important;
+}
+/* line 540, ../sass/_categories.scss */
+.categoriesSection ul.paginationlist li:first-child {
+  background: #444;
+  border: 1px solid #333 !important;
+  padding: 9px 15px;
+  margin-right: 5px;
+}
+/* line 547, ../sass/_categories.scss */
+.categoriesSection ul.paginationlist li:first-child:hover {
+  border: 1px solid #d7ac42 !important;
+}
+/* line 555, ../sass/_categories.scss */
+.categoriesSection ul.paginationlist li:hover {
+  background: #dfb858;
+  border: 1px solid #d7ac42 !important;
+}
+/* line 560, ../sass/_categories.scss */
+.categoriesSection ul.paginationlist li:hover a {
+  color: #fff;
+}
+/* line 567, ../sass/_categories.scss */
+.categoriesSection ul.paginationlist li.active {
+  padding: 10px 15px;
+  line-height: 90%;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: inline-block;
+  float: left;
+  background: #dfb858;
+  border: 1px solid #d7ac42 !important;
+  line-height: 20px;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+/* line 581, ../sass/_categories.scss */
+.categoriesSection ul.paginationlist li.active a {
+  color: #fff !important;
+}
+
+@media (max-width: 600px) {
+  /* line 596, ../sass/_categories.scss */
+  .resultArea {
+    width: 100%;
+    height: auto;
+    float: right;
+  }
+}
+/* line 11, ../sass/_goldscheme.scss */
+.goldSchemeArea {
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 40px;
+  display: block;
+}
+/* line 19, ../sass/_goldscheme.scss */
+.goldSchemeArea .headArea {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+/* line 25, ../sass/_goldscheme.scss */
+.goldSchemeArea .headArea img {
+  width: 80%;
+  max-width: 84px;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  float: none;
+  display: block;
+}
+/* line 36, ../sass/_goldscheme.scss */
+.goldSchemeArea .headArea h4 {
+  width: 100%;
+  height: auto;
+  float: left;
+  display: block;
+  font-weight: 500;
+  color: #1b164d;
+  font-size: 24px;
+  font-family: "Dosis", sans-serif;
+  margin: 25px 0;
+  text-align: center;
+}
+/* line 50, ../sass/_goldscheme.scss */
+.goldSchemeArea .headArea p.mainDes {
+  color: #444444;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  line-height: 28px;
+  margin-top: 20px;
+  text-align: center;
+}
+/* line 64, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea {
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 30px 15%;
+  /* Table css Start */
+  /* Table css End */
+}
+/* line 74, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea table.goldSchemeTable {
+  border-radius: 5px !important;
+  padding: 1px;
+  margin: 0;
+  border: none;
+  overflow: hidden;
+  width: 100%;
+  background: #ccc;
+}
+/* line 89, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea table.goldSchemeTable thead tr {
+  border: 1px solid #e1c695;
+}
+/* line 94, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea table.goldSchemeTable thead th {
+  padding: 20px 10px;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  background: #e1c695;
+  text-align: center;
+  border: 1px solid #e1c695;
+}
+/* line 109, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea table.goldSchemeTable tbody tr {
+  border: 1px solid #b5b5b5;
+}
+/* line 114, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea table.goldSchemeTable tbody td {
+  padding: 15px 10px;
+  text-align: center;
+  border-left: 1px solid #b5b5b5;
+  font-family: "Raleway", sans-serif;
+}
+/* line 127, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea table.goldSchemeTable .col-1, .goldSchemeArea .tableContentArea table.goldSchemeTable .col-2, .goldSchemeArea .tableContentArea table.goldSchemeTable .col-3, .goldSchemeArea .tableContentArea table.goldSchemeTable .col-4, .goldSchemeArea .tableContentArea table.goldSchemeTable .col-5 {
+  width: 20%;
+  height: auto;
+}
+/* line 133, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea table.goldSchemeTable .col-5 {
+  border-right: 1px solid #b5b5b5;
+}
+/* line 138, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea table.goldSchemeTable span {
+  display: none;
+  float: left;
+  width: 30%;
+  text-align: left;
+  color: #000;
+}
+/* line 147, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea table.goldSchemeTable p {
+  display: inline-block;
+  width: auto;
+  color: #444;
+  padding-left: 40px;
+  line-height: 24px;
+}
+/* line 155, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea table.goldSchemeTable p:before {
+  content: ":";
+  margin-right: 40px;
+  display: none;
+  float: left;
+}
+/* line 165, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea table.goldSchemeTable p.rupeesIcon {
+  background: url(../images/rupees.png) 30px 8px no-repeat;
+  background-size: 7px;
+}
+/* line 175, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea table.goldSchemeTable .col-1 span:before {
+  content: "Weight";
+}
+/* line 183, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea table.goldSchemeTable .col-2 span:before {
+  content: "Monthly";
+}
+/* line 191, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea table.goldSchemeTable .col-3 span:before {
+  content: "1 Year";
+}
+/* line 199, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea table.goldSchemeTable .col-4 span:before {
+  content: "5 Years";
+}
+/* line 207, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea table.goldSchemeTable .col-5 span:before {
+  content: "10 Years";
+}
+/* line 214, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea table.goldSchemeTable tbody > tr:nth-of-type(even) {
+  background: #f7f7f7 !important;
+}
+/* line 218, ../sass/_goldscheme.scss */
+.goldSchemeArea .tableContentArea table.goldSchemeTable tbody > tr:nth-of-type(odd) {
+  background: #fff !important;
+}
+
+/* line 233, ../sass/_goldscheme.scss */
+#lightbox .modal-content {
+  display: inline-block;
+  text-align: center;
+}
+/* line 239, ../sass/_goldscheme.scss */
+#lightbox .close {
+  opacity: 1;
+  color: #E5BF04;
+  background-color: rgba(25, 25, 25, 0);
+  padding: 0 10px;
+  border-radius: 100%;
+  border: 1px solid rgba(255, 255, 255, 0);
+  position: absolute;
+  top: -15px;
+  right: -55px;
+  z-index: 1032;
+  line-height: 1px;
+  height: 30px;
+  width: 30px;
+  font-size: 60px;
+}
+
+/* line 258, ../sass/_goldscheme.scss */
+.thumbnail img {
+  border: none !important;
+  padding: 0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 269, ../sass/_goldscheme.scss */
+  .goldSchemeArea {
+    padding: 40px 15px !important;
+  }
+  /* line 273, ../sass/_goldscheme.scss */
+  .goldSchemeArea .tableContentArea {
+    padding: 40px 0 !important;
+  }
+  /* line 279, ../sass/_goldscheme.scss */
+  .goldSchemeArea .tableContentArea table.goldSchemeTable .col-1, .goldSchemeArea .tableContentArea table.goldSchemeTable .col-2, .goldSchemeArea .tableContentArea table.goldSchemeTable .col-3, .goldSchemeArea .tableContentArea table.goldSchemeTable .col-4, .goldSchemeArea .tableContentArea table.goldSchemeTable .col-5 {
+    width: 100% !important;
+    height: auto;
+    display: block !important;
+    float: left !important;
+  }
+  /* line 287, ../sass/_goldscheme.scss */
+  .goldSchemeArea .tableContentArea table.goldSchemeTable span {
+    display: inline-block !important;
+    font-weight: 600;
+    padding-left: 20px;
+  }
+  /* line 294, ../sass/_goldscheme.scss */
+  .goldSchemeArea .tableContentArea table.goldSchemeTable p {
+    display: inline-block;
+    width: 65% !important;
+    color: #444;
+    text-align: left;
+  }
+  /* line 300, ../sass/_goldscheme.scss */
+  .goldSchemeArea .tableContentArea table.goldSchemeTable p:before {
+    display: block !important;
+  }
+  /* line 308, ../sass/_goldscheme.scss */
+  .goldSchemeArea .tableContentArea table.goldSchemeTable p.rupeesIcon {
+    background: url(../images/rupees.png) 70px 8px no-repeat;
+    background-size: 7px;
+  }
+  /* line 314, ../sass/_goldscheme.scss */
+  .goldSchemeArea .tableContentArea table.goldSchemeTable thead {
+    display: none !important;
+  }
+  /* line 321, ../sass/_goldscheme.scss */
+  .goldSchemeArea .tableContentArea table.goldSchemeTable tbody tr {
+    padding: 20px 0 !important;
+    width: 100%;
+    float: left;
+  }
+  /* line 327, ../sass/_goldscheme.scss */
+  .goldSchemeArea .tableContentArea table.goldSchemeTable tbody tr td {
+    border-left: none;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  /* line 332, ../sass/_goldscheme.scss */
+  .goldSchemeArea .tableContentArea table.goldSchemeTable tbody tr td:last-child {
+    border: none !important;
+  }
+  /* line 341, ../sass/_goldscheme.scss */
+  .goldSchemeArea .tableContentArea table.goldSchemeTable tbody > tr:nth-of-type(even) {
+    background: #f4dcb0 !important;
+  }
+  /* line 344, ../sass/_goldscheme.scss */
+  .goldSchemeArea .tableContentArea table.goldSchemeTable tbody > tr:nth-of-type(even) td {
+    border-left: none;
+    border-bottom: 1px solid #fff4e1;
+  }
+  /* line 349, ../sass/_goldscheme.scss */
+  .goldSchemeArea .tableContentArea table.goldSchemeTable tbody > tr:nth-of-type(even) td:last-child {
+    border: none !important;
+  }
+}
+/* line 17, ../sass/screen.scss */
+.breadCrumbSection {
+  background: #e9cfa0;
+  padding: 20px 0px;
+}
+/* line 22, ../sass/screen.scss */
+.breadCrumbSection ul {
+  margin: 0px;
+  padding: 0px;
+}
+/* line 27, ../sass/screen.scss */
+.breadCrumbSection ul li {
+  list-style: none;
+  display: inline-block;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  color: #444444;
+  font-size: 18px;
+}
+/* line 36, ../sass/screen.scss */
+.breadCrumbSection ul a {
+  text-decoration: none;
+  color: #444444;
+}
+/* line 41, ../sass/screen.scss */
+.breadCrumbSection ul .activePage {
+  color: #a07936;
+}
+
+/* line 48, ../sass/screen.scss */
+.infoSection {
+  padding: 40px 0px;
+}
+/* line 52, ../sass/screen.scss */
+.infoSection .infoBox {
+  border: solid 1px #daaf61;
+  border-top: solid 5px #daaf61;
+  padding: 30px 50px;
+}
+/* line 58, ../sass/screen.scss */
+.infoSection .infoBox p {
+  color: #444444;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+/* line 70, ../sass/screen.scss */
+.infoSection .infoBox h2 {
+  margin:0 0 15px;
+  padding: 0px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  color: #1b164d;
+  font-size: 24px;
+  line-height: 25px;
+}
+/* line 80, ../sass/screen.scss */
+.infoSection .infoBox h2:not(:first-child) {
+  margin-top: 30px;
+}

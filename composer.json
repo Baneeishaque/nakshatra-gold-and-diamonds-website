@@ -1,0 +1,16 @@
+{
+    "name": "baneeishaque/nakshatra-gold-and-diamonds-website",
+    "description": "nakshatra gold and diamonds html website",
+    "type": "project",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Banee Ishaque K",
+            "email": "Baneeishaque@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+    }
+}
